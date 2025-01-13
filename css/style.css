@@ -56,10 +56,6 @@ body {
     margin: auto;
 }
 
-.active {
-    background-color: #717171;
-}
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -115,7 +111,7 @@ body {
 .prev-1, .next-1 {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -125,9 +121,15 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: #f7941d;
 }
 
-.prev-1:hover, .next-1:hover {
+.next-1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
     background-color: #eaa95f;
     color: #f7941d;
 }
@@ -245,11 +247,17 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: #f7941d;
 }
 
 .prev-2:hover, .next-2:hover {
     background-color: #eaa95f;
     color: #f7941d;
+}
+
+.next-2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 #anshin-title h1 {
@@ -327,11 +335,17 @@ body {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: #f7941d;
 }
 
 .prev-3:hover, .next-3:hover {
     background-color: #eaa95f;
     color: #f7941d;
+}
+
+.next-3 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 #camp-title h1 {
@@ -444,16 +458,22 @@ body {
     padding: 16px;
     margin-top: -22px;
     color: #f7941d;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: #f7941d;
 }
 
 .prev-4:hover, .next-4:hover {
     background-color: #eaa95f;
     color: #f7941d;
+}
+
+.next-4 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .buffet {
