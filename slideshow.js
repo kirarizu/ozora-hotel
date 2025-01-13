@@ -17,8 +17,8 @@ function showSlidesTop() {
 
 
 let slideIndex = [1, 1, 1, 1];
-let slideId = ["slidea", "slideb", "slidec", "slided"]
-let dotId = ["jujitsu-slider", "anshin-slider", "camp-slider", "buffet-slider"]
+let slideId = ["slidesa", "slidesb", "slidesc", "slidesd"]
+let dotId = ["slider-1", "slider-2", "slider-3", "slider-4"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
@@ -35,11 +35,13 @@ function currentSlides(n, no) {
 function showSlides(n, no) {
     let i;
     let x = document.getElementsByClassName(slideId[no]);
+    console.log(x);
     let dots = document.getElementsByClassName(dotId[no]);
-    if (n > x, length) { slideIndex[no] = 1}
-    if (n < 1) { slideIndex[no]= x, length}
-    for (i = 0; i < x, length; i++) {
+    if (n > x.length) { slideIndex[no] = 1}
+    if (n < 1) { slideIndex[no]= x.length}
+    for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+        console.log("ping");
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
